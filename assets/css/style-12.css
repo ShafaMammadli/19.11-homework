@@ -1,0 +1,24 @@
+.animated-box {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    cursor: pointer;
+
+    animation-name: colorful-box;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful-box {
+    0% {background-color: rgb(166, 166, 70);}
+    10% {background-color: greenyellow;}
+    20% {background-color: green;}
+    30% {background-color: darkcyan;}
+    40% {background-color: blue;}
+    50% {background-color: blueviolet;}
+    60% {background-color: brown;}
+    70% {background-color: red;}
+    80% {background-color: coral;}
+    90% {background-color: darkgoldenrod;}
+    100% {background-color: orange;}
+}

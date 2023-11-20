@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.animated-box {
+  height: 450px;
+  width: 550px;
+  background-color: gainsboro;
+  padding: 20px;
+  margin: 30px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  position: relative;
+
+  animation-name: movebox;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movebox {
+  0% {
+    background-color: blue;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+  }
+
+  25% {
+    background-color: red;
+    border-radius: 0;
+    left: 400px;
+    top: 0;
+  }
+
+  50% {
+    background-color: green;
+    border-radius: 50%;
+    left: 400px;
+    top: 300px;
+  }
+
+  75% {
+    background-color: orange;
+    border-radius: 0;
+    left: 0;
+    top: 300px;
+  }
+
+  100% {
+    background-color: blue;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+  }
+}

@@ -1,0 +1,31 @@
+h1 {
+    color: green;
+}
+
+.shaky-btn {
+    height: 40px;
+    width: 200px;
+    border: 2px outset black;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+
+.shaky-btn:hover {
+    border: 3px solid green;
+    color: green;
+    transition: s;
+
+    animation-name: shaky-btn;
+    animation-duration: .5s;
+}
+
+@keyframes shaky-btn {
+    0% { transform: translate(1px, 1px) rotate(-1deg) }
+    20% { transform: translate(-3px, 0px) rotate(2deg)}
+    40% { transform: translate(1px, -1px) rotate(0deg)}
+    60% { transform: translate(-3px, 1px)  rotate(-1deg)}
+    80% { transform: translate(-1px, -1px) rotate(1deg)}
+    100% { transform: translate(1px, -2px) rotate(0deg)}
+}

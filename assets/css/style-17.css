@@ -1,0 +1,12 @@
+.transform {
+    height: 200px;
+    width: 400px;
+    background-color: blueviolet;
+    margin: 100px;
+    cursor: pointer;
+    transition: all 2s linear;
+}
+
+.transform:hover {
+    transform: scale(1.3);
+}

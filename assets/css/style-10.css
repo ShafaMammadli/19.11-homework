@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.transformed-div {
+    height: 500px;
+    width: 600px;
+    background-color: burlywood;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 60px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.rotate1 {
+    height: 100px;
+    width: 100px;
+    background-color: darkcyan;
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+.rotate1:hover {
+    transform: rotateX(360deg);
+}
+
+.rotate2 {
+    height: 100px;
+    width: 100px;
+    background-color: darkcyan;
+    font-weight: 600;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+
+.rotate2:hover {
+    transform: rotateY(360deg);
+}
+
+.rotate3 {
+    height: 100px;
+    width: 100px;
+    background-color: darkcyan;
+    font-weight: 600;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+.rotate3:hover {
+    transform: rotateZ(120deg);
+}
